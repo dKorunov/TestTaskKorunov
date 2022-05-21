@@ -1,0 +1,13 @@
+C:\Users\DandD\source\repos\TestTask\TestTask\bin\Debug\netcoreapp3.1\TestTask.exe
+C:\Users\DandD\source\repos\TestTask\TestTask\bin\Debug\netcoreapp3.1\TestTask.deps.json
+C:\Users\DandD\source\repos\TestTask\TestTask\bin\Debug\netcoreapp3.1\TestTask.runtimeconfig.json
+C:\Users\DandD\source\repos\TestTask\TestTask\bin\Debug\netcoreapp3.1\TestTask.runtimeconfig.dev.json
+C:\Users\DandD\source\repos\TestTask\TestTask\bin\Debug\netcoreapp3.1\TestTask.dll
+C:\Users\DandD\source\repos\TestTask\TestTask\bin\Debug\netcoreapp3.1\TestTask.pdb
+C:\Users\DandD\source\repos\TestTask\TestTask\obj\Debug\netcoreapp3.1\TestTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DandD\source\repos\TestTask\TestTask\obj\Debug\netcoreapp3.1\TestTask.AssemblyInfoInputs.cache
+C:\Users\DandD\source\repos\TestTask\TestTask\obj\Debug\netcoreapp3.1\TestTask.AssemblyInfo.cs
+C:\Users\DandD\source\repos\TestTask\TestTask\obj\Debug\netcoreapp3.1\TestTask.csproj.CoreCompileInputs.cache
+C:\Users\DandD\source\repos\TestTask\TestTask\obj\Debug\netcoreapp3.1\TestTask.dll
+C:\Users\DandD\source\repos\TestTask\TestTask\obj\Debug\netcoreapp3.1\TestTask.pdb
+C:\Users\DandD\source\repos\TestTask\TestTask\obj\Debug\netcoreapp3.1\TestTask.genruntimeconfig.cache
