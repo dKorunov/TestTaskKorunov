@@ -21,7 +21,6 @@ C:\Users\DandD\Desktop\TestTask\TestTask\bin\Debug\net5.0\TestTask.runtimeconfig
 C:\Users\DandD\Desktop\TestTask\TestTask\bin\Debug\net5.0\TestTask.dll
 C:\Users\DandD\Desktop\TestTask\TestTask\bin\Debug\net5.0\ref\TestTask.dll
 C:\Users\DandD\Desktop\TestTask\TestTask\bin\Debug\net5.0\TestTask.pdb
-C:\Users\DandD\Desktop\TestTask\TestTask\obj\Debug\net5.0\TestTask.csproj.AssemblyReference.cache
 C:\Users\DandD\Desktop\TestTask\TestTask\obj\Debug\net5.0\TestTask.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\DandD\Desktop\TestTask\TestTask\obj\Debug\net5.0\TestTask.AssemblyInfoInputs.cache
 C:\Users\DandD\Desktop\TestTask\TestTask\obj\Debug\net5.0\TestTask.AssemblyInfo.cs

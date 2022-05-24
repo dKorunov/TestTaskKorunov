@@ -84,7 +84,10 @@ namespace TestTask
         /// </summary>
         public static void Task1(List<TestEmployee> ListEmployee)
         {
+            List<int> salary = new List<int>();
             int taskRuc = 0;
+            int summ = 0;
+            List<TestEmployee> result = new List<TestEmployee>();
             Console.Clear();
             Console.WriteLine("Посчитать: " +
                         "\n1 - С руководителями" +
@@ -101,19 +104,17 @@ namespace TestTask
                     Console.WriteLine("Проверьте правильность ввода!");
                 }
             }
-            int summ = 0;
-            for (int i = 0; i <= ListEmployee.Count - 1; i++)
+            switch (taskRuc)
             {
-                switch (taskRuc)
-                {
-                    case 1:
-                        if (ListEmployee[i].C_Cheif_id != "") summ = summ + ListEmployee[i].E_Salary;
-                    break;
-                    case 2:
-                        if (ListEmployee[i].C_Cheif_id == "") summ = summ + ListEmployee[i].E_Salary;
-                    break;
-                }
+                 case 1:
+                    result = ListEmployee.FindAll(x => x.C_Cheif_id != "");
+                 break;
+                 case 2:
+                    result = ListEmployee.FindAll(x => x.C_Cheif_id == "");
+                 break;
             }
+            foreach (TestEmployee resultFor in result) salary.Add(resultFor.E_Salary);
+            foreach (int salaryOrderFor in salary) summ = summ + salaryOrderFor;
             Console.Clear();
             Console.WriteLine("Сумма: " + summ + "");
         }
@@ -123,22 +124,13 @@ namespace TestTask
         public static void Task2(List<TestEmployee> ListEmployee, List<TestDepartament> ListDepartament)
         {
             Console.Clear();
-            int summ = 0;
-            int departament_id = 0;
-            string departament_name = "";
-            for (int i = 0; i <= ListEmployee.Count - 1; i++)
-            {
-                if (ListEmployee[i].E_Salary > summ)
-                {
-                    summ = ListEmployee[i].E_Salary;
-                    departament_id = ListEmployee[i].B_Departament_id;
-                }
-            }
-            for (int i = 0; i <= ListDepartament.Count - 1; i++)
-            {
-                if (ListDepartament[i].A_ID == departament_id) departament_name = ListDepartament[i].B_Departament;
-            }
-            Console.WriteLine("Департамент: " + departament_name + ", ЗП:"+ summ + "");
+            List<int> salary = new List<int>();
+            List<int> departament = new List<int>();
+            var maxSalary = ListEmployee.Max(t => t.E_Salary);
+            var departament_id = ListEmployee.Where(x => x.E_Salary == maxSalary).ElementAt(0).B_Departament_id;
+            var result = ListDepartament.FindIndex(x => x.A_ID == departament_id);
+            var departament_name = ListDepartament[result].B_Departament;
+            Console.WriteLine("Департамент: " + departament_name + ", ЗП:"+ maxSalary + "");
         }
         /// <summary>
         /// Выполнение третьей задачи
@@ -146,16 +138,12 @@ namespace TestTask
         public static void Task3(List<TestEmployee> ListEmployee)
         {
             Console.Clear();
-            int summ = 0;
             List<int> salary = new List<int>();
-            for (int i = 0; i <= ListEmployee.Count - 1; i++)
-            {
-                 if (ListEmployee[i].F_Cheif_Or_No == 1) salary.Add(ListEmployee[i].E_Salary);
-                
-            }
-            var selectedList = salary.OrderByDescending(u => u);
-            foreach(int lst in selectedList)
-            Console.WriteLine(""+ lst + "");   
+            var result = ListEmployee.FindAll(x => x.F_Cheif_Or_No == 1);
+            foreach(TestEmployee resultFor in result) salary.Add(resultFor.E_Salary);
+            var salaryOrder = salary.OrderByDescending(u => u);
+            foreach (int salaryOrderFor in salaryOrder)
+            Console.WriteLine(""+ salaryOrderFor + "");   
         }
         /// <summary>
         /// Данные по департаментам
